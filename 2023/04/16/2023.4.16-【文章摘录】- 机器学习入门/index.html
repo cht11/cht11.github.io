@@ -1,0 +1,763 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta name="referrer" content="no-referrer">
+
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content="">
+  
+    <meta property="og:type" content="article">
+<meta property="og:title" content="4.16-【文章摘录】- 机器学习入门">
+<meta property="og:url" content="http://example.com/2023/04/16/2023.4.16-%E3%80%90%E6%96%87%E7%AB%A0%E6%91%98%E5%BD%95%E3%80%91-%20%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/index.html">
+<meta property="og:site_name" content="cht11">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://easyai.tech/wp-content/uploads/2018/12/7steps-ml.png">
+<meta property="article:published_time" content="2023-04-16T09:21:00.000Z">
+<meta property="article:modified_time" content="2023-04-22T11:44:42.176Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="机器学习">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://easyai.tech/wp-content/uploads/2018/12/7steps-ml.png">
+  
+  
+  
+  <title>4.16-【文章摘录】- 机器学习入门 - cht11</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"kzpnp7DNYwvboDPkXzmk2Q69-MdYXbMMI","app_key":"ireqQQri5PP8smjRpohD0gi9","server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>cht11</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="4.16-【文章摘录】- 机器学习入门"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2023-04-16 17:21" pubdate>
+          2023年4月16日 下午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          1.8k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          15 分钟
+        
+      </span>
+    
+
+    
+    
+      
+        <span id="leancloud-page-views-container" class="post-meta" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="leancloud-page-views"></span> 次
+        </span>
+        
+      
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">4.16-【文章摘录】- 机器学习入门</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <p>最近入门机器学习，记录一些文章及其摘录。</p>
+<span id="more"></span>
+
+
+
+<h1 id="4-16-【文章摘录】-机器学习入门"><a href="#4-16-【文章摘录】-机器学习入门" class="headerlink" title="4.16-【文章摘录】- 机器学习入门"></a>4.16-【文章摘录】- 机器学习入门</h1><p>[toc]</p>
+<h4 id="机器学习入门"><a href="#机器学习入门" class="headerlink" title="机器学习入门"></a><a target="_blank" rel="noopener" href="https://klose911.github.io/html/ml/intro.html">机器学习入门</a></h4><p>较<strong>科普性</strong>的文章，介绍了机器学习的<strong>各个方向</strong>及<strong>热门算法</strong>，对入门了解很友好。</p>
+<blockquote>
+<p>热门算法包括：</p>
+<p>回归算法<br>神经网络<br>SVM算法<br>聚类算法<br>降维算法<br>推荐算法<br>其他算法</p>
+</blockquote>
+<h4 id="EasyAI-blog：AI知识库"><a href="#EasyAI-blog：AI知识库" class="headerlink" title="EasyAI blog：AI知识库"></a><a target="_blank" rel="noopener" href="https://easyai.tech/ai-definition/">EasyAI blog：AI知识库</a></h4><blockquote>
+<p>一个关于人工智能的综合博客</p>
+</blockquote>
+<h4 id="人工智能-–-Artificial-intelligence-AI"><a href="#人工智能-–-Artificial-intelligence-AI" class="headerlink" title="人工智能 – Artificial intelligence | AI"></a><a target="_blank" rel="noopener" href="https://easyai.tech/ai-definition/ai/">人工智能 – Artificial intelligence | AI</a></h4><blockquote>
+<p>人工智能<strong>科普性</strong>文章，讲述以下几点（目录）：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://easyai.tech/ai-definition/ai/#what">什么是人工智能？</a></li>
+<li><a target="_blank" rel="noopener" href="https://easyai.tech/ai-definition/ai/#history">人工智能的发展历史</a></li>
+<li><a target="_blank" rel="noopener" href="https://easyai.tech/ai-definition/ai/#cant">人工智能不能做什么？</a></li>
+<li><a target="_blank" rel="noopener" href="https://easyai.tech/ai-definition/ai/#shiye">人工智能会让你失业吗？</a></li>
+<li><a target="_blank" rel="noopener" href="https://easyai.tech/ai-definition/ai/#zongjie">总结</a><ol>
+<li>人工智能本质上是一种工具</li>
+<li>人工智能技能只能解决特定的问题，而不是什么都能做</li>
+<li>人工智能属于归纳逻辑，可以告诉你是什么，但是不能告诉你为什么</li>
+</ol>
+</li>
+<li><a target="_blank" rel="noopener" href="https://easyai.tech/ai-definition/ai/#2020">「附」2020 AI 发展趋势</a></li>
+</ul>
+</blockquote>
+<h4 id="训练集、验证集、测试集（附：分割方法-交叉验证）"><a href="#训练集、验证集、测试集（附：分割方法-交叉验证）" class="headerlink" title="训练集、验证集、测试集（附：分割方法+交叉验证）"></a><a target="_blank" rel="noopener" href="https://easyai.tech/ai-definition/3dataset-and-cross-validation/">训练集、验证集、测试集（附：分割方法+交叉验证）</a></h4><blockquote>
+<p>如题，介绍基础知识，训练集、验证集、测试集。</p>
+<p>数据分割方法：</p>
+<ul>
+<li>小规模样本集（几万量级），常用的分配比例是 60% 训练集、20% 验证集、20% 测试集。</li>
+<li>大规模样本集，留 1w 验证集和 1w 测试集。</li>
+</ul>
+<p>同时介绍交叉验证方法</p>
+<ul>
+<li><strong>留出法（Holdout cross validation）</strong></li>
+<li><strong>留一法（Leave one out cross validation）</strong></li>
+<li><strong>k 折交叉验证（k-fold cross validation）</strong></li>
+</ul>
+</blockquote>
+<h4 id="分类模型评估指标——准确率、精准率、召回率、F1、ROC曲线、AUC曲线"><a href="#分类模型评估指标——准确率、精准率、召回率、F1、ROC曲线、AUC曲线" class="headerlink" title="分类模型评估指标——准确率、精准率、召回率、F1、ROC曲线、AUC曲线"></a><a target="_blank" rel="noopener" href="https://easyai.tech/ai-definition/accuracy-precision-recall-f1-roc-auc/">分类模型评估指标——准确率、精准率、召回率、F1、ROC曲线、AUC曲线</a></h4><blockquote>
+<p>机器学习模型需要有量化的评估指标来评估哪些模型的效果更好。</p>
+<p>本文将用通俗易懂的方式讲解分类问题的混淆矩阵和各种评估指标的计算公式。将要给大家介绍的评估指标有：准确率、精准率、召回率、F1、ROC曲线、AUC曲线。</p>
+<p><strong>问题：</strong>不太懂F1、ROC曲线、AUC曲线。另外的指标也不熟悉。</p>
+</blockquote>
+<h4 id="无监督学习-–-Unsupervised-learning-UL"><a href="#无监督学习-–-Unsupervised-learning-UL" class="headerlink" title="无监督学习 – Unsupervised learning | UL"></a><a target="_blank" rel="noopener" href="https://easyai.tech/ai-definition/unsupervised-learning/">无监督学习 – Unsupervised learning | UL</a></h4><blockquote>
+<p>无监督学习是机器学习领域内的一种学习方式。本文将给大家解释他的基本概念，告诉大家无监督学习可以用用到哪些具体场景中。</p>
+<p>最后给大家举例说明2类无监督学习的思维：聚类、降维。以及具体的4种算法</p>
+</blockquote>
+<h4 id="监督学习-–-Supervised-learning"><a href="#监督学习-–-Supervised-learning" class="headerlink" title="监督学习 – Supervised learning"></a><a target="_blank" rel="noopener" href="https://easyai.tech/ai-definition/supervised-learning/">监督学习 – Supervised learning</a></h4><blockquote>
+<p><strong>监督学习需要有明确的目标，很清楚自己想要什么结果</strong>。比如：按照“既定规则”来分类、预测某个具体的值…</p>
+<p>即给数据集打上标签后，再训练模型</p>
+</blockquote>
+<h4 id="机器学习-–-machine-learning-ML"><a href="#机器学习-–-machine-learning-ML" class="headerlink" title="机器学习 – machine learning | ML"></a><a target="_blank" rel="noopener" href="https://easyai.tech/ai-definition/machine-learning/">机器学习 – machine learning | ML</a></h4><blockquote>
+<p>同样是<strong>科普类文章</strong>，总览<strong>介绍</strong>机器学习。</p>
+<p>Field of study that gives computers the ability to learn without being explicitly programmed.</p>
+<p>机器学习分为<strong>三大类</strong>：</p>
+<ol>
+<li>监督学习</li>
+<li>非监督学习</li>
+<li>强化学习</li>
+</ol>
+<p><strong>7个步骤</strong>：</p>
+<p><img src="https://easyai.tech/wp-content/uploads/2018/12/7steps-ml.png" srcset="/img/loading.gif" lazyload alt="机器学习的7个步骤"></p>
+</blockquote>
+<h4 id="深度学习-–-Deep-learning-DL"><a href="#深度学习-–-Deep-learning-DL" class="headerlink" title="深度学习 – Deep learning | DL"></a><a target="_blank" rel="noopener" href="https://easyai.tech/ai-definition/deep-learning/">深度学习 – Deep learning | DL</a></h4><blockquote>
+<p>深度学习有很好的表现，引领了第三次人工智能的浪潮。目前大部分表现优异的应用都用到了深度学习，大红大紫的 AlphaGo 就使用到了深度学习。</p>
+<p>本文将详细的给大家介绍深度学习的基本概念、优缺点和主流的几种算法。</p>
+</blockquote>
+<h4 id="生成对抗网络-–-Generative-Adversarial-Networks-GAN"><a href="#生成对抗网络-–-Generative-Adversarial-Networks-GAN" class="headerlink" title="生成对抗网络 – Generative Adversarial Networks | GAN"></a><a target="_blank" rel="noopener" href="https://easyai.tech/ai-definition/gan/">生成对抗网络 – Generative Adversarial Networks | GAN</a></h4><blockquote>
+<p>生成对抗网络 – GAN 是最近2年很热门的一种无监督算法，他能生成出非常逼真的照片，图像甚至视频。我们手机里的照片处理软件中就会使用到它。</p>
+<p>本文将详细介绍生成对抗网络 – GAN 的设计初衷、基本原理、10种典型算法和13种实际应用。</p>
+<ul>
+<li><p>有生成器G和判别器D</p>
+<p>第一阶段：固定「判别器D」，训练「生成器G」（训练大概是使用强化学习）</p>
+<p>第二阶段：固定「生成器G」，训练「判别器D」</p>
+<p>循环阶段一和阶段二，通过不断的循环，「生成器G」和「判别器D」的能力都越来越强。</p>
+</li>
+</ul>
+</blockquote>
+<h4 id="生成性对抗网络（GAN）初学者指南-–-附代码"><a href="#生成性对抗网络（GAN）初学者指南-–-附代码" class="headerlink" title="生成性对抗网络（GAN）初学者指南 – 附代码"></a><a target="_blank" rel="noopener" href="https://easyai.tech/blog/generative-adversarial-networks-gans-a-beginners-guide/">生成性对抗网络（GAN）初学者指南 – 附代码</a></h4><blockquote>
+<p>更详细的<strong>介绍</strong>了GAN，含代码。</p>
+</blockquote>
+<h3 id="干货，看不懂：长文解释生成对抗网络GAN的详细原理（20分钟阅读）"><a href="#干货，看不懂：长文解释生成对抗网络GAN的详细原理（20分钟阅读）" class="headerlink" title="干货，看不懂：长文解释生成对抗网络GAN的详细原理（20分钟阅读）"></a><a target="_blank" rel="noopener" href="https://easyai.tech/blog/understanding-generative-adversarial-networks-gans/">干货，看不懂：长文解释生成对抗网络GAN的详细原理（20分钟阅读）</a></h3><blockquote>
+<p>大纲：</p>
+<p>在下面的第一节中，我们将讨论从给定分布生成随机变量的过程。然后，在第2节中，我们将通过一个例子展示GAN试图解决的问题可以表示为随机变量生成问题。在第3节中，我们将讨论基于匹配的生成网络，并展示它们如何回答第2节中描述的问题。最后在第4节中，我们将介绍GAN。更具体地说，我们将展示具有其损失功能的一般架构，并且我们将与之前的所有部分建立链接。</p>
+</blockquote>
+<h4 id="AI-数据集最常见的6大问题（附解决方案）"><a href="#AI-数据集最常见的6大问题（附解决方案）" class="headerlink" title="AI 数据集最常见的6大问题（附解决方案）"></a><a target="_blank" rel="noopener" href="https://easyai.tech/blog/ai-dataset-6-problem-solution/">AI 数据集最常见的6大问题（附解决方案）</a></h4><blockquote>
+<ul>
+<li>问题1：数据量不够</li>
+<li>问题2：低质量的分类</li>
+<li>问题3：低质量的数据</li>
+<li>问题4：不平衡的分类</li>
+<li>问题5：数据不平衡</li>
+<li>问题6：没有验证集和测试集</li>
+</ul>
+</blockquote>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">#机器学习</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>4.16-【文章摘录】- 机器学习入门</div>
+      <div>http://example.com/2023/04/16/2023.4.16-【文章摘录】- 机器学习入门/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>John Doe</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2023年4月16日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2023/05/30/2023.5.30-python%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="2023.5.30-python复习笔记【更新ing】">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">2023.5.30-python复习笔记【更新ing】</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2023/04/02/2-%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B/" title="个人介绍">
+                        <span class="hidden-mobile">个人介绍</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="leancloud-site-pv-container" style="display: none">
+        总访客量 
+        <span id="leancloud-site-pv"></span>
+         次
+      </span>
+    
+    
+      <span id="leancloud-site-uv-container" style="display: none">
+        总访客数 
+        <span id="leancloud-site-uv"></span>
+         人
+      </span>
+    
+    
+
+  
+</div>
+
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+  <script defer src="/js/leancloud.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>

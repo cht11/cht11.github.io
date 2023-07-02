@@ -1,0 +1,1052 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta name="referrer" content="no-referrer">
+
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="记录python复习的笔记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2023.5.30-python复习笔记【更新ing】">
+<meta property="og:url" content="http://example.com/2023/05/30/2023.5.30-python%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:site_name" content="cht11">
+<meta property="og:description" content="记录python复习的笔记">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://gitee.com/cht1/Image/raw/master/image-20230601104856188.png">
+<meta property="og:image" content="https://gitee.com/cht1/Image/raw/master/image-20230601113642517.png">
+<meta property="og:image" content="https://gitee.com/cht1/Image/raw/master/image-20230601114040628.png">
+<meta property="og:image" content="https://gitee.com/cht1/Image/raw/master/image-20230601114110681.png">
+<meta property="og:image" content="https://gitee.com/cht1/Image/raw/master/image-20230602171818673.png">
+<meta property="og:image" content="https://gitee.com/cht1/Image/raw/master/image-20230603154155014.png">
+<meta property="og:image" content="https://gitee.com/cht1/Image/raw/master/image-20230603155914807.png">
+<meta property="og:image" content="https://gitee.com/cht1/Image/raw/master/image-20230603162648014.png">
+<meta property="og:image" content="https://gitee.com/cht1/Image/raw/master/image-20230603162908911.png">
+<meta property="og:image" content="https://gitee.com/cht1/Image/raw/master/image-20230611153138620.png">
+<meta property="og:image" content="https://gitee.com/cht1/Image/raw/master/image-20230618195321912.png">
+<meta property="og:image" content="https://gitee.com/cht1/Image/raw/master/image-20230618195713320.png">
+<meta property="og:image" content="https://gitee.com/cht1/Image/raw/master/image-20230618210900684.png">
+<meta property="og:image" content="https://gitee.com/cht1/Image/raw/master/image-20230618211844698.png">
+<meta property="og:image" content="https://gitee.com/cht1/Image/raw/master/image-20230618212424681.png">
+<meta property="og:image" content="https://gitee.com/cht1/Image/raw/master/image-20230629214140053.png">
+<meta property="og:image" content="https://gitee.com/cht1/Image/raw/master/image-20230629214854629.png">
+<meta property="og:image" content="https://gitee.com/cht1/Image/raw/master/image-20230629224123104.png">
+<meta property="og:image" content="https://gitee.com/cht1/Image/raw/master/image-20230629231410611.png">
+<meta property="og:image" content="https://gitee.com/cht1/Image/raw/master/image-20230629231454779.png">
+<meta property="og:image" content="http://example.com/AppData/Roaming/Typora/typora-user-images/image-20230629231935943.png">
+<meta property="og:image" content="http://example.com/AppData/Roaming/Typora/typora-user-images/image-20230629232519360.png">
+<meta property="og:image" content="http://example.com/AppData/Roaming/Typora/typora-user-images/image-20230702164554408.png">
+<meta property="og:image" content="https://gitee.com/cht1/Image/raw/master/image-20230702164832341.png">
+<meta property="og:image" content="https://gitee.com/cht1/Image/raw/master/image-20230702164946947.png">
+<meta property="og:image" content="https://gitee.com/cht1/Image/raw/master/image-20230702165051907.png">
+<meta property="og:image" content="https://gitee.com/cht1/Image/raw/master/image-20230702165930344.png">
+<meta property="og:image" content="https://gitee.com/cht1/Image/raw/master/image-20230702170551291.png">
+<meta property="og:image" content="https://gitee.com/cht1/Image/raw/master/image-20230702170646881.png">
+<meta property="og:image" content="https://gitee.com/cht1/Image/raw/master/image-20230702171723459.png">
+<meta property="og:image" content="https://gitee.com/cht1/Image/raw/master/image-20230702171947542.png">
+<meta property="og:image" content="https://gitee.com/cht1/Image/raw/master/image-20230702172552279.png">
+<meta property="og:image" content="https://gitee.com/cht1/Image/raw/master/image-20230702215820917.png">
+<meta property="og:image" content="https://gitee.com/cht1/Image/raw/master/image-20230702220315013.png">
+<meta property="og:image" content="https://gitee.com/cht1/Image/raw/master/image-20230702220616175.png">
+<meta property="og:image" content="https://gitee.com/cht1/Image/raw/master/image-20230702223556511.png">
+<meta property="article:published_time" content="2023-05-30T09:21:00.000Z">
+<meta property="article:modified_time" content="2023-07-02T14:55:28.936Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="python">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://gitee.com/cht1/Image/raw/master/image-20230601104856188.png">
+  
+  
+  
+  <title>2023.5.30-python复习笔记【更新ing】 - cht11</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"kzpnp7DNYwvboDPkXzmk2Q69-MdYXbMMI","app_key":"ireqQQri5PP8smjRpohD0gi9","server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>cht11</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="2023.5.30-python复习笔记【更新ing】"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2023-05-30 17:21" pubdate>
+          2023年5月30日 下午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          5.2k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          44 分钟
+        
+      </span>
+    
+
+    
+    
+      
+        <span id="leancloud-page-views-container" class="post-meta" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="leancloud-page-views"></span> 次
+        </span>
+        
+      
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">2023.5.30-python复习笔记【更新ing】</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <p>记录python复习的笔记，观看b站小甲鱼的<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1c4411e77t">《零基础入门学习Python》最新版</a>，倍速刷过一遍，记录一些遗忘的知识点。</p>
+<span id="more"></span>
+
+
+
+<h1 id="2023-5-30-python复习笔记"><a href="#2023-5-30-python复习笔记" class="headerlink" title="2023.5.30-python复习笔记"></a>2023.5.30-python复习笔记</h1><p>[toc]</p>
+<h2 id="一、变量和字符串"><a href="#一、变量和字符串" class="headerlink" title="一、变量和字符串"></a>一、变量和字符串</h2><h3 id="1、变量交换"><a href="#1、变量交换" class="headerlink" title="1、变量交换"></a>1、变量交换</h3><p><img src="https://gitee.com/cht1/Image/raw/master/image-20230601104856188.png" srcset="/img/loading.gif" lazyload alt="image-20230601104856188"></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs python">x=<span class="hljs-number">3</span><br>y=<span class="hljs-number">5</span><br><span class="hljs-comment">#交还x，y的值</span><br>x,y = y,x<br></code></pre></td></tr></table></figure>
+
+<h3 id="2、随机数-random"><a href="#2、随机数-random" class="headerlink" title="2、随机数 random"></a>2、随机数 random</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> random<br></code></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs python">random.random()<span class="hljs-comment">#返回一个随机数</span><br>random.randint(a,b)<span class="hljs-comment">#返回一个a到b之间的随机数</span><br>x=random.getstate()<span class="hljs-comment">#获取随机数种子</span><br>random.setstate(x)<span class="hljs-comment">#设置随机数种子</span><br></code></pre></td></tr></table></figure>
+
+<p>获取了随机数种子，可实现伪随机数攻击。</p>
+<h3 id="3、数字类型"><a href="#3、数字类型" class="headerlink" title="3、数字类型"></a>3、数字类型</h3><p>python的浮点数表示存在误差</p>
+<p><img src="https://gitee.com/cht1/Image/raw/master/image-20230601113642517.png" srcset="/img/loading.gif" lazyload alt="image-20230601113642517"></p>
+<p>用decimal库可以强制精确小数。</p>
+<p><img src="https://gitee.com/cht1/Image/raw/master/image-20230601114040628.png" srcset="/img/loading.gif" lazyload alt="image-20230601114040628"></p>
+<p><strong>科学计数法</strong>：如下图，e-05表示10的负5次方，即5*10^-5^。</p>
+<p><img src="https://gitee.com/cht1/Image/raw/master/image-20230601114110681.png" srcset="/img/loading.gif" lazyload alt="image-20230601114110681"></p>
+<h3 id="4、计算符号"><a href="#4、计算符号" class="headerlink" title="4、计算符号"></a>4、计算符号</h3><p>算数除法：<code>\</code></p>
+<p>向下取整：<code>\\</code></p>
+<p>取模：<code>%</code></p>
+<p>求绝对值：<code>abs(x)</code></p>
+<p><code>divmod(a,b)</code>： 函数把除数和余数运算结果结合起来，返回一个包含商和余数的元组(a &#x2F;&#x2F; b, a % b)。</p>
+<p>幂运算：<code>a**b</code>，a的b次方；</p>
+<p><code>pow(a,b)</code>，a的b次方；</p>
+<p><code>pow(a,b,c)</code>：a的b次方 再求c的模。</p>
+<p><strong>逻辑运算符号</strong>：<code>and</code> ，<code>or</code>，<code>not</code>：与或非</p>
+<h2 id="二、分支和循环"><a href="#二、分支和循环" class="headerlink" title="二、分支和循环"></a>二、分支和循环</h2><h3 id="1、分支结构"><a href="#1、分支结构" class="headerlink" title="1、分支结构"></a>1、分支结构</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">if</span> condition1:<br>    <span class="hljs-comment">#分之一</span><br><span class="hljs-keyword">elif</span> condition2:<br>    <span class="hljs-comment">#分支二</span><br><span class="hljs-keyword">else</span>:<br>    <span class="hljs-comment">#分之三</span><br></code></pre></td></tr></table></figure>
+
+<p>求最大值、最小值</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs python">a=<span class="hljs-number">3</span><br>b=<span class="hljs-number">5</span><br>small=a <span class="hljs-keyword">if</span> a&lt;b <span class="hljs-keyword">else</span> b<span class="hljs-comment">#如果a&lt;b则small=a，否则small=b</span><br>big=a <span class="hljs-keyword">if</span> a&gt;b <span class="hljs-keyword">else</span> b<span class="hljs-comment">#如果a&gt;b则max=a，否则big=b</span><br></code></pre></td></tr></table></figure>
+
+<p>简写多行分支</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs python">s = <span class="hljs-number">60</span><br>l = (<span class="hljs-string">&#x27;D&#x27;</span> <span class="hljs-keyword">if</span> <span class="hljs-number">0</span>&lt;=s&lt;<span class="hljs-number">60</span> <span class="hljs-keyword">else</span><br>     <span class="hljs-string">&#x27;C&#x27;</span> <span class="hljs-keyword">if</span> s&lt;<span class="hljs-number">70</span> <span class="hljs-keyword">else</span><br>     <span class="hljs-string">&#x27;B&#x27;</span> <span class="hljs-keyword">if</span> s&lt;<span class="hljs-number">80</span> <span class="hljs-keyword">else</span><br>     <span class="hljs-string">&#x27;A&#x27;</span> <span class="hljs-keyword">if</span> s&lt;<span class="hljs-number">100</span> <span class="hljs-keyword">else</span><br>     <span class="hljs-string">&#x27;S&#x27;</span> <span class="hljs-keyword">if</span> s==<span class="hljs-number">100</span> <span class="hljs-keyword">else</span><br>     <span class="hljs-string">&quot;请输入0~100之间的数&quot;</span>)<br>l<br><span class="hljs-string">&#x27;C&#x27;</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="2、while循环结构"><a href="#2、while循环结构" class="headerlink" title="2、while循环结构"></a>2、while循环结构</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">while</span> condition:<br>    <span class="hljs-comment">#循环</span><br>    <br><span class="hljs-keyword">break</span><span class="hljs-comment">#退出循环</span><br><span class="hljs-keyword">continue</span><span class="hljs-comment">#结束此轮循环，进入下一轮循环.</span><br><br></code></pre></td></tr></table></figure>
+
+<p>注意<code>else</code>可以接在while语句后面</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python">i=<span class="hljs-number">1</span><br><span class="hljs-keyword">while</span> i&lt;=<span class="hljs-number">7</span>:<br>    a = <span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;今天有好好学习嘛?&quot;</span>)<br>    <span class="hljs-keyword">if</span> a!=<span class="hljs-string">&#x27;有&#x27;</span>:<br>        <span class="hljs-keyword">break</span><br>    i+=<span class="hljs-number">1</span><br><span class="hljs-keyword">else</span>:<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;已经学习7天了！真棒&quot;</span>)<br></code></pre></td></tr></table></figure>
+
+
+
+<h3 id="3、for循环结构"><a href="#3、for循环结构" class="headerlink" title="3、for循环结构"></a>3、for循环结构</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">for</span> 变量 <span class="hljs-keyword">in</span> 可迭代对象<br><span class="hljs-comment">#例如</span><br><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-string">&quot;Fish&quot;</span>:<br>    <span class="hljs-built_in">print</span>(i)<br><span class="hljs-comment">#打印如下：   </span><br>F<br>i<br>s<br>h<br></code></pre></td></tr></table></figure>
+
+<p><code>range</code>函数用法</p>
+<blockquote>
+<p>range(stop)</p>
+<p>range(start, stop)</p>
+<p>range(start, stop, step)</p>
+</blockquote>
+<p><strong>包含start，不包含stop</strong>，注意，当<code>step</code>为负数时，表示<strong>逆序</strong>。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>,<span class="hljs-number">10</span>,<span class="hljs-number">3</span>):<br>    <span class="hljs-built_in">print</span>(i)<br><span class="hljs-comment">#打印</span><br><span class="hljs-number">0</span><br><span class="hljs-number">3</span><br><span class="hljs-number">6</span><br><span class="hljs-number">9</span><br><span class="hljs-comment">#例子</span><br><span class="hljs-keyword">for</span> n <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">2</span>,<span class="hljs-number">10</span>):<br>    <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">2</span>,n):<br>        <span class="hljs-keyword">if</span> n%x==<span class="hljs-number">0</span>:<br>            <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;n&quot;</span>,<span class="hljs-string">&quot;=&quot;</span>,<span class="hljs-string">&quot;*&quot;</span>,n//x)<br>            <span class="hljs-keyword">break</span><br>    <span class="hljs-keyword">else</span>:<br>        <span class="hljs-built_in">print</span>(n,<span class="hljs-string">&quot;是一个素数&quot;</span>)<br></code></pre></td></tr></table></figure>
+
+
+
+<h2 id="三、列表"><a href="#三、列表" class="headerlink" title="三、列表"></a>三、列表</h2><h3 id="1、列表切片"><a href="#1、列表切片" class="headerlink" title="1、列表切片"></a>1、列表切片</h3><p>类似C语言数组</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs python">a = [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>,<span class="hljs-number">6</span>,<span class="hljs-string">&quot;123456&quot;</span>]<br>a[start:end:step]<br><span class="hljs-comment">#包含start，不包含end。注意：start表示下标，从0开始。</span><br></code></pre></td></tr></table></figure>
+
+<p>注意，当<code>step</code>为负数时，表示<strong>逆序</strong>。</p>
+<p><img src="https://gitee.com/cht1/Image/raw/master/image-20230602171818673.png" srcset="/img/loading.gif" lazyload alt="image-20230602171818673"></p>
+<h3 id="2、列表-增删查改"><a href="#2、列表-增删查改" class="headerlink" title="2、列表-增删查改"></a>2、列表-增删查改</h3><p><strong>末尾</strong>增加一个元素：<code>a.append(一个可迭代对象)</code></p>
+<p><strong>末尾</strong>增加多个元素：<code>a.extend([增加列表])</code>、<code>a.[len(a):]=[增加列表]</code></p>
+<p><strong>指定位置</strong>插入：<code>a.insert(position,value)</code></p>
+<p>删除<strong>指定元素</strong>：<code>a.remove(value)</code>，如果没有value值，则报错</p>
+<p>删除<strong>指定位置</strong>：<code>a.pop(position)</code></p>
+<p>清空列表：<code>a.clear()</code></p>
+<p>单个替换：<code>a[1]=value</code></p>
+<p>多个替换：<code>a[6:]=[列表]</code>，从第6个后面全部替换为<strong>列表</strong>。</p>
+<p><strong>从小到大</strong>排序：<code>a.sort()</code></p>
+<p>逆序列表：<code>a.reverse()</code></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-built_in">list</span>.sort(self,key=<span class="hljs-literal">None</span>,reverse=<span class="hljs-literal">False</span>)	<span class="hljs-comment">#对原列表进行排序</span><br></code></pre></td></tr></table></figure>
+
+<p>计数：<code>a.count(value)</code>，返回列表a中value值的个数</p>
+<p>返回值的下表：<code>a.index(value)</code>，只返回value第一次出现的下表。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python">a[a.index(value1)] = value2<span class="hljs-comment">#将value1替换为value2</span><br>a.index(value,start,end)<span class="hljs-comment">#从下标start开始到end下标，查找value</span><br></code></pre></td></tr></table></figure>
+
+
+
+<p>复制一整个列表：<code>b = a.copy()</code>等价与<code>b=a[:]</code></p>
+<blockquote>
+<p> 不等价于<code>b=a</code></p>
+<p><code>b=a.copy()</code>，b是复制到一个独立的内存，而<code>c=a</code>，表示c指向a的内存，只是一个引用。</p>
+<p>但注意，这个“独立”，只适用于一维数组，无法对二维、三维……之后的数据进行复制，还是原引用。（浅拷贝与深拷贝的关系。）</p>
+</blockquote>
+<h3 id="3、二维列表"><a href="#3、二维列表" class="headerlink" title="3、二维列表"></a>3、二维列表</h3><p><img src="https://gitee.com/cht1/Image/raw/master/image-20230603154155014.png" srcset="/img/loading.gif" lazyload alt="image-20230603154155014"></p>
+<p>初始化一个二维列表</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">#正确方法</span><br>A=[<span class="hljs-number">0</span>]*<span class="hljs-number">3</span> <span class="hljs-comment">#A=[0, 0, 0]</span><br><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">3</span>):<br>    A[i]=[<span class="hljs-number">0</span>]*<span class="hljs-number">3</span><br><span class="hljs-comment">#A=[[0, 0, 0],[0, 0, 0],[0, 0, 0]]</span><br><br><span class="hljs-comment">#错误方法</span><br>B=[[<span class="hljs-number">0</span>]*<span class="hljs-number">3</span>]*<span class="hljs-number">3</span><span class="hljs-comment">#B=[[0, 0, 0], [0, 0, 0], [0, 0, 0]]</span><br></code></pre></td></tr></table></figure>
+
+<p>两种列表初始化方法，其内存布局是不同的。</p>
+<p><img src="https://gitee.com/cht1/Image/raw/master/image-20230603155914807.png" srcset="/img/loading.gif" lazyload alt="image-20230603155914807"></p>
+<h3 id="4、浅拷贝与深拷贝"><a href="#4、浅拷贝与深拷贝" class="headerlink" title="4、浅拷贝与深拷贝"></a>4、浅拷贝与深拷贝</h3><p>当列表为二维及以上的列表是，则需要考虑是否用深拷贝。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> copy<br></code></pre></td></tr></table></figure>
+
+<p>列表y<strong>浅拷贝</strong>x列表，则修改y列表，同时x列表也会被修改。</p>
+<p><img src="https://gitee.com/cht1/Image/raw/master/image-20230603162648014.png" srcset="/img/loading.gif" lazyload alt="image-20230603162648014"></p>
+<p>列表z<strong>深拷贝</strong>x列表，则修改z列表，不会修改x列表。</p>
+<p><img src="https://gitee.com/cht1/Image/raw/master/image-20230603162908911.png" srcset="/img/loading.gif" lazyload alt="image-20230603162908911"></p>
+<blockquote>
+<p>python<strong>默认是浅拷贝</strong>。</p>
+</blockquote>
+<h3 id="5、列表推导式"><a href="#5、列表推导式" class="headerlink" title="5、列表推导式"></a>5、列表推导式</h3><p>直接创建一个新的列表，再复制。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python">oho<br>&gt;&gt;&gt;[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]<br>oho = [i*<span class="hljs-number">2</span> <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> oho]<br>oho<br>&gt;&gt;&gt;[<span class="hljs-number">2</span>, <span class="hljs-number">4</span>, <span class="hljs-number">6</span>, <span class="hljs-number">8</span>, <span class="hljs-number">10</span>]<br></code></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs python">code = [<span class="hljs-built_in">ord</span>(c) <span class="hljs-keyword">for</span> c <span class="hljs-keyword">in</span> <span class="hljs-string">&quot;FishC&quot;</span>]<br>code<br>&gt;&gt;&gt;[<span class="hljs-number">70</span>, <span class="hljs-number">105</span>, <span class="hljs-number">115</span>, <span class="hljs-number">104</span>, <span class="hljs-number">67</span>]<br></code></pre></td></tr></table></figure>
+
+<p>内置函数：<code>ord(c)</code>：将单个字符转换成编码（ASCLL）。</p>
+<p><strong>矩阵操作</strong>：取二维矩阵某一列的元素</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs python">martrix = [[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>],<br>           [<span class="hljs-number">4</span>,<span class="hljs-number">5</span>,<span class="hljs-number">6</span>],<br>           [<span class="hljs-number">7</span>,<span class="hljs-number">8</span>,<span class="hljs-number">9</span>]]<br>col2 = [row[<span class="hljs-number">1</span>] <span class="hljs-keyword">for</span> row <span class="hljs-keyword">in</span> martrix]<br>col2<br>&gt;&gt;&gt;[<span class="hljs-number">2</span>, <span class="hljs-number">5</span>, <span class="hljs-number">8</span>]<br></code></pre></td></tr></table></figure>
+
+
+
+<p>为列表推导式，添加<code>if</code>条件</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">#初始化一个0~10之间的偶数序列</span><br>even = [ i <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">10</span>) <span class="hljs-keyword">if</span> i%<span class="hljs-number">2</span>==<span class="hljs-number">0</span>]<br>even<br>&gt;&gt;&gt;[<span class="hljs-number">0</span>, <span class="hljs-number">2</span>, <span class="hljs-number">4</span>, <span class="hljs-number">6</span>, <span class="hljs-number">8</span>]<br></code></pre></td></tr></table></figure>
+
+<p>列表推导式的<strong>嵌套循环</strong>：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">#例1</span><br>martrix<br>[[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>], [<span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>], [<span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>]]<br>flatten=[col <span class="hljs-keyword">for</span> row <span class="hljs-keyword">in</span> martrix <span class="hljs-keyword">for</span> col <span class="hljs-keyword">in</span> row]<br>flatten<br>&gt;&gt;&gt;[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>]<br><br><span class="hljs-comment">#例2</span><br>a = [x*y <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">1</span>,<span class="hljs-number">5</span>) <span class="hljs-keyword">for</span> y <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">1</span>,<span class="hljs-number">5</span>) ]<br>a<br>&gt;&gt;&gt;[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">2</span>, <span class="hljs-number">4</span>, <span class="hljs-number">6</span>, <span class="hljs-number">8</span>, <span class="hljs-number">3</span>, <span class="hljs-number">6</span>, <span class="hljs-number">9</span>, <span class="hljs-number">12</span>, <span class="hljs-number">4</span>, <span class="hljs-number">8</span>, <span class="hljs-number">12</span>, <span class="hljs-number">16</span>]<br></code></pre></td></tr></table></figure>
+
+<p>高阶嵌套循环</p>
+<p><img src="https://gitee.com/cht1/Image/raw/master/image-20230611153138620.png" srcset="/img/loading.gif" lazyload alt="image-20230611153138620"></p>
+<h3 id="6、元组-tuple"><a href="#6、元组-tuple" class="headerlink" title="6、元组 tuple"></a>6、元组 tuple</h3><p>元组不可变，<strong>不能修改自身</strong>。</p>
+<p>元组的声明：</p>
+<p><img src="https://gitee.com/cht1/Image/raw/master/image-20230618195321912.png" srcset="/img/loading.gif" lazyload alt="image-20230618195321912"></p>
+<p>支持查找和切片，不支持修改。</p>
+<p>也支持<strong>迭代</strong>。</p>
+<p>元组的<strong>打包</strong>和<strong>解包</strong>。注意解包是，等式左右两端变量数量相等。</p>
+<img src="https://gitee.com/cht1/Image/raw/master/image-20230618195713320.png" srcset="/img/loading.gif" lazyload alt="image-20230618195713320" style="zoom: 50%;">
+
+<h2 id="四、字符串"><a href="#四、字符串" class="headerlink" title="四、字符串"></a>四、字符串</h2><h3 id="1、字符串基本处理"><a href="#1、字符串基本处理" class="headerlink" title="1、字符串基本处理"></a>1、字符串基本处理</h3><p>字符串同样是不可变对象，所有方法都是在原基础上生成新字符串。</p>
+<p>字符串同样<strong>支持切片</strong></p>
+<img src="https://gitee.com/cht1/Image/raw/master/image-20230618210900684.png" srcset="/img/loading.gif" lazyload alt="image-20230618210900684" style="zoom:50%;">
+
+<p>字符串单词处理的一些基本方法</p>
+<table>
+<thead>
+<tr>
+<th>字符串方法</th>
+<th>大致意义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>x.capitalize()</td>
+<td>使一串单词的首字母大写</td>
+</tr>
+<tr>
+<td>x.casefold()</td>
+<td>使所有单词变为小写（与lower方法略微不同）</td>
+</tr>
+<tr>
+<td>x.title()</td>
+<td>使一串单词中每个单词的手写字母大写</td>
+</tr>
+<tr>
+<td>x.swapcase()</td>
+<td>反转字符串中所有字母的大小写</td>
+</tr>
+<tr>
+<td>x.upper()</td>
+<td>使所有单词大写</td>
+</tr>
+<tr>
+<td>x.lower()</td>
+<td>使所有单词小写</td>
+</tr>
+</tbody></table>
+<img src="https://gitee.com/cht1/Image/raw/master/image-20230618211844698.png" srcset="/img/loading.gif" lazyload alt="image-20230618211844698" style="zoom: 50%;">
+
+<table>
+<thead>
+<tr>
+<th>字符串方法</th>
+<th>大致意义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>x.center(n,char)</td>
+<td>使字符串居中对其n个字符，空白填充char字符，默认空格</td>
+</tr>
+<tr>
+<td>x.ljust(n,char)</td>
+<td>同上，实现左对齐</td>
+</tr>
+<tr>
+<td>x.rjust(n,char)</td>
+<td>同上，实现右对齐</td>
+</tr>
+<tr>
+<td>s.zfill(n)</td>
+<td>用0填充左侧实现对其n</td>
+</tr>
+</tbody></table>
+<img src="https://gitee.com/cht1/Image/raw/master/image-20230618212424681.png" srcset="/img/loading.gif" lazyload alt="image-20230618212424681" style="zoom:50%;">
+
+
+
+<h3 id="2、字符串操作"><a href="#2、字符串操作" class="headerlink" title="2、字符串操作"></a>2、字符串操作</h3><ol>
+<li>查找操作</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>查找操作</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>x.count(char,start,end)</td>
+<td>从字符串下标start到end，查找字符char</td>
+</tr>
+<tr>
+<td>x.find(char)</td>
+<td>从左往右查找字符，返回下标，不存在则返回-1</td>
+</tr>
+<tr>
+<td>x.rfind(char)</td>
+<td>从右往左查找</td>
+</tr>
+<tr>
+<td>x.index(char)</td>
+<td>从左往右查找字符，返回首字母下标，不存在则抛出<strong>异常</strong></td>
+</tr>
+</tbody></table>
+<ol start="2">
+<li>替换操作</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>替换操作</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>x.expandtabs(k)</td>
+<td>将字符串中的每个tab字符替换为k个空格。</td>
+</tr>
+<tr>
+<td>x.replace(a,b)</td>
+<td>将x字符串中的a字符串替换为b字符串</td>
+</tr>
+<tr>
+<td>table &#x3D; x.maketrans(a,b)</td>
+<td>返回一个，将等长的字符串a、b一一对应的table表</td>
+</tr>
+<tr>
+<td>str.translate(table)</td>
+<td>用上面的table表，替换str字符串。</td>
+</tr>
+</tbody></table>
+<img src="https://gitee.com/cht1/Image/raw/master/image-20230629214140053.png" srcset="/img/loading.gif" lazyload alt="image-20230629214140053" style="zoom:50%;">
+
+<p><code>x.maketrans(a,b,c)</code>支持第三个参数c，可以将字符串c中的所有字符替换为空None。</p>
+<img src="https://gitee.com/cht1/Image/raw/master/image-20230629214854629.png" srcset="/img/loading.gif" lazyload alt="image-20230629214854629" style="zoom:50%;">
+
+<p>一些其他方法</p>
+<img src="https://gitee.com/cht1/Image/raw/master/image-20230629224123104.png" srcset="/img/loading.gif" lazyload alt="image-20230629224123104" style="zoom:67%;">
+
+<p>等等，太多了，记不完。。</p>
+<ol start="3">
+<li>关键方法</li>
+</ol>
+<p><code>str.join(s)</code>：遍历字符串str，为每个字符后面添加字符串s，（s若一个列表，则拼接起来）</p>
+<p><code>format()</code>方法，格式化输出字符串</p>
+<img src="https://gitee.com/cht1/Image/raw/master/image-20230629231410611.png" srcset="/img/loading.gif" lazyload alt="image-20230629231410611" style="zoom:50%;">
+
+<img src="https://gitee.com/cht1/Image/raw/master/image-20230629231454779.png" srcset="/img/loading.gif" lazyload alt="image-20230629231454779" style="zoom:50%;">
+
+
+
+<p>格式化输出数字：二进制、八进制、十进制</p>
+<img src="../../../../../AppData/Roaming/Typora/typora-user-images/image-20230629231935943.png" srcset="/img/loading.gif" lazyload alt="image-20230629231935817" style="zoom:50%;">
+
+<p>f字符串</p>
+<img src="../../../../../AppData/Roaming/Typora/typora-user-images/image-20230629232519360.png" srcset="/img/loading.gif" lazyload alt="image-20230629232519360" style="zoom:50%;">
+
+<h2 id="五、序列"><a href="#五、序列" class="headerlink" title="五、序列"></a>五、序列</h2><h3 id="1、序列基础"><a href="#1、序列基础" class="headerlink" title="1、序列基础"></a>1、序列基础</h3><p>序列分为<strong>可变序列</strong>（列表）和<strong>不可变序列</strong>（元组、字符串）</p>
+<p><code>id()</code>方法，返回一个对象的唯一标识，一个整形的id值。</p>
+<p><strong>基础运算符</strong>：</p>
+<p><code>is</code>和<code>is not</code>判断两个变量是否为同一对象。</p>
+<p><code>in</code>和<code>not in</code>判断一个对象是否包含在另一个对象内</p>
+<h3 id="2、列表、元组、字符串相互转换"><a href="#2、列表、元组、字符串相互转换" class="headerlink" title="2、列表、元组、字符串相互转换"></a>2、列表、元组、字符串相互转换</h3><table>
+<thead>
+<tr>
+<th>列表、元组、字符串相互转换</th>
+<th></th>
+<th>初始化：a列表、b元组、c字符串<br><img src="../../../../../AppData/Roaming/Typora/typora-user-images/image-20230702164554408.png" srcset="/img/loading.gif" lazyload alt="image-20230702164554408" style="zoom:50%;"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>可迭代对象</strong>（字符串、元组）<strong>转列表</strong>：</td>
+<td><code>list()</code></td>
+<td>注意：字符串转列表后，依然是单个字符，而非值<br><img src="https://gitee.com/cht1/Image/raw/master/image-20230702164832341.png" srcset="/img/loading.gif" lazyload alt="image-20230702164832341" style="zoom:50%;"></td>
+</tr>
+<tr>
+<td>可迭代对象<strong>转元组</strong>：</td>
+<td><code>tuple()</code></td>
+<td>注意：字符串转元组后，依然是单个字符<br><img src="https://gitee.com/cht1/Image/raw/master/image-20230702164946947.png" srcset="/img/loading.gif" lazyload alt="image-20230702164946947" style="zoom:50%;"></td>
+</tr>
+<tr>
+<td>可迭代对象<strong>转字符串</strong>：</td>
+<td><code>str()</code></td>
+<td>注意：连符号也一同转换（列表的框框<code>[]</code>还存在）<br><img src="https://gitee.com/cht1/Image/raw/master/image-20230702165051907.png" srcset="/img/loading.gif" lazyload alt="image-20230702165051907" style="zoom:50%;"></td>
+</tr>
+</tbody></table>
+<p><strong>基础方法：</strong>参数为可迭代对象。</p>
+<p><code>min()</code>：可设置参数default&#x3D;”“，表示空对象时默认输出。</p>
+<p><code>max()</code>：</p>
+<p><code>len()</code>：</p>
+<p><code>sorted()</code>：注意：该方法参数可以是列表、元组、字符串，但返回的是一个全新的<strong>列表</strong>，原对象并未改变（与列表自带方法<code>x.sort()</code>不同）。</p>
+<img src="https://gitee.com/cht1/Image/raw/master/image-20230702165930344.png" srcset="/img/loading.gif" lazyload alt="image-20230702165930344" style="zoom:50%;">
+
+<img src="https://gitee.com/cht1/Image/raw/master/image-20230702170551291.png" srcset="/img/loading.gif" lazyload alt="image-20230702170551291" style="zoom:50%;">
+
+
+
+<p><code>reversed()</code>：同上，返回结果是一个<code>迭代器</code>，即一个地址，需要用<strong>list</strong>方法（<strong>tuple</strong>方法也可以）显示。</p>
+<img src="https://gitee.com/cht1/Image/raw/master/image-20230702170646881.png" srcset="/img/loading.gif" lazyload alt="image-20230702170646881" style="zoom:50%;">
+
+<h3 id="3、序列-其他"><a href="#3、序列-其他" class="headerlink" title="3、序列-其他"></a>3、序列-其他</h3><p><code>enumerate()</code>：函数用于返回一个枚举对象，它的功能就是将可迭代对象中的每个元素及从start（默认为0）开始的序号共同构成一个<strong>二元组</strong>的列表。</p>
+<img src="https://gitee.com/cht1/Image/raw/master/image-20230702171723459.png" srcset="/img/loading.gif" lazyload alt="image-20230702171723459" style="zoom:50%;">
+
+<p><code>zip()</code>：函数用于创建一个聚合多个可迭代对象的<strong>迭代器</strong>（返回）。它会将作为参数传入的<strong>每个可迭代对象的每个元素</strong>依次组合成元组，即第i个元组包含来自每个参数的第i个元素。</p>
+<img src="https://gitee.com/cht1/Image/raw/master/image-20230702171947542.png" srcset="/img/loading.gif" lazyload alt="image-20230702171947542" style="zoom:50%;">
+
+<p><code>map()</code>：函数会<strong>根据提供的函数</strong>对指定的可迭代对象的每个元素进行运算,并将<strong>返回运算结果的迭代器</strong>。</p>
+<img src="https://gitee.com/cht1/Image/raw/master/image-20230702172552279.png" srcset="/img/loading.gif" lazyload alt="image-20230702172552279" style="zoom:50%;">
+
+<p><code>filter()</code>：函数会<strong>根据提供的函数</strong>对指定的可迭代对象的每个元素进行运算,并<strong>将运算结果为真的元素</strong>,以迭代器的形式返回。</p>
+<p>与<code>map()</code>不同的是，只保留运算结果为真的元素。</p>
+<img src="https://gitee.com/cht1/Image/raw/master/image-20230702215820917.png" srcset="/img/loading.gif" lazyload alt="image-20230702215820917" style="zoom:50%;">
+
+
+
+<h3 id="4、可迭代对象-vs-迭代器"><a href="#4、可迭代对象-vs-迭代器" class="headerlink" title="4、可迭代对象 vs 迭代器"></a>4、可迭代对象 vs 迭代器</h3><p>可迭代对象：列表、元组、字符串这些，可以重复使用</p>
+<p>迭代器：只可使用一次，用完之后则变为空。</p>
+<img src="https://gitee.com/cht1/Image/raw/master/image-20230702220315013.png" srcset="/img/loading.gif" lazyload alt="image-20230702220315013" style="zoom:50%;">
+
+<p><code>iter()</code>：该方法将一个可迭代对象转换为一个迭代器。</p>
+<p>可以通过<code>next()</code>方法，每次从迭代器中取一个元素，同样包含可选的<code>default</code>参数。</p>
+<img src="https://gitee.com/cht1/Image/raw/master/image-20230702220616175.png" srcset="/img/loading.gif" lazyload alt="image-20230702220616175" style="zoom:50%;">
+
+<h2 id="六、字典、集合、函数"><a href="#六、字典、集合、函数" class="headerlink" title="六、字典、集合、函数"></a>六、字典、集合、函数</h2><h3 id="1、字典"><a href="#1、字典" class="headerlink" title="1、字典"></a>1、字典</h3><p>字典：python中唯一实现<strong>映射关系</strong>的内置类型。使用方法：x&#x3D;{键:值，键:值，……}</p>
+<p>键不可重复，重复则覆盖原始键对应的值。</p>
+<p>6种字典创建方式：</p>
+<img src="https://gitee.com/cht1/Image/raw/master/image-20230702223556511.png" srcset="/img/loading.gif" lazyload alt="image-20230702223556511" style="zoom:50%;">
+
+
+
+<p><code>fromkeys(iterable[, values])</code>：快速创建一个所有键的值都为value的字典（value默认为None）。</p>
+<p><strong>新增</strong>键值对：直接定义即可。</p>
+<p><code>pop(key[, default])</code>：该方法<strong>删除</strong>字典中对应键key。</p>
+<p><code>popitem()</code>，python3.7之前，随机删除一个键值对，python3.7之后，删除最后一个加入列表的键值对。</p>
+<p><code>del</code>关键字，可用于删除字典的指定键，如<code>del d[&quot;i&quot;]</code></p>
+<p><code>d.clear()</code>该方法删除字典<code>d</code>中的所有键值对，使其变为一个空字典。</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/python/">#python</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>2023.5.30-python复习笔记【更新ing】</div>
+      <div>http://example.com/2023/05/30/2023.5.30-python复习笔记/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>John Doe</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2023年5月30日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2023/04/16/2023.4.16-%E3%80%90%E6%96%87%E7%AB%A0%E6%91%98%E5%BD%95%E3%80%91-%20%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/" title="4.16-【文章摘录】- 机器学习入门">
+                        <span class="hidden-mobile">4.16-【文章摘录】- 机器学习入门</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="leancloud-site-pv-container" style="display: none">
+        总访客量 
+        <span id="leancloud-site-pv"></span>
+         次
+      </span>
+    
+    
+      <span id="leancloud-site-uv-container" style="display: none">
+        总访客数 
+        <span id="leancloud-site-uv"></span>
+         人
+      </span>
+    
+    
+
+  
+</div>
+
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+  <script defer src="/js/leancloud.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
